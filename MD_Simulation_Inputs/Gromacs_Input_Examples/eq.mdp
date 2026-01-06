@@ -1,0 +1,71 @@
+;----------------------------
+; Equilibration (NVT) parameters
+;----------------------------
+tinit       = 0
+integrator  = md
+dt          = 0.001
+nsteps      = 1000000
+
+;----------------------------
+; Center-of-mass motion removal
+;----------------------------
+comm-grps   = system
+comm-mode   = none
+nstcomm     = 1000
+
+;----------------------------
+; Neighbor list and periodic boundary
+;----------------------------
+nstlist     = 5
+ns_type     = grid
+pbc         = xyz
+
+;----------------------------
+; Output control
+;----------------------------
+nstxout             = 0
+nstvout             = 0
+nstfout             = 0
+nstlog              = 2000
+nstenergy           = 2000
+nstxout-compressed  = 2000
+compressed-x-grps   = system
+
+;----------------------------
+; Nonbonded interactions
+;----------------------------
+cutoff-scheme = Verlet
+rlist         = 1.4
+coulombtype   = cut-off
+rcoulomb      = 1.4
+vdwtype       = cut-off
+rvdw          = 1.4
+DispCorr      = EnerPres
+
+;----------------------------
+; Temperature coupling (NVT)
+;----------------------------
+Tcoupl          = nose-hoover
+nh-chain-length = 1
+tau_t           = -1 0.1
+tc_grps         = EWO METH
+ref_t           = 298 298
+
+;----------------------------
+; Pressure coupling
+;----------------------------
+Pcoupl          = no
+
+;----------------------------
+; Velocity generation
+;----------------------------
+gen_vel  = yes
+gen_temp = 298
+gen_seed = -1
+
+;----------------------------
+; Constraints / frozen groups
+;----------------------------
+freezegrps  = EWO
+freezedim   = Y Y Y
+constraints = none

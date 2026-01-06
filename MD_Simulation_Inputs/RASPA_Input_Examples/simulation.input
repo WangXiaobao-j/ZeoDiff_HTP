@@ -1,0 +1,21 @@
+SimulationType                MonteCarlo
+NumberOfCycles                100000
+NumberOfInitializationCycles  100000
+PrintEvery                    1000
+
+Forcefield                    local
+RemoveAtomNumberCodeFromLabel yes
+
+Framework 0
+FrameworkName EWO
+UnitCells 3 3 8
+ExternalTemperature 298.0
+Movies yes
+WriteMoviesEvery 100
+
+Component 0 MoleculeName             methane
+            MoleculeDefinition       local
+            TranslationProbability   1
+            CreateNumberOfMolecules  100
+            BlockPockets             yes
+            BlockPocketsFilename     EWO
