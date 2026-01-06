@@ -1,4 +1,4 @@
-# Zeolite Diffusion Coefficient Prediction System
+<img width="864" height="455" alt="image" src="https://github.com/user-attachments/assets/a63f05e9-ad04-468f-857e-c34bd5f5fee4" /># Zeolite Diffusion Coefficient Prediction System
 
 An interactive desktop application for predicting molecular diffusion coefficients in zeolite structures using trained Artificial Neural Networks (ANN).
 
@@ -90,7 +90,7 @@ Modify `config.py` to customize:
 
 ## Citation
 
-[Add your citation information here]
+"Harnessing confinement effect and interpretable machine learning to predict and guide alkane diffusion in zeolite catalysts"
 
 ## Contact
 
