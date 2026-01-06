@@ -1,9 +1,9 @@
 #!/bin/bash
-#SBATCH --job-name=EWO               # Job name (modify as needed)
+#SBATCH --job-name=EWO               # Job name
 #SBATCH --partition=chem             # Partition
 #SBATCH --ntasks-per-node=8          # Number of tasks per node
 #SBATCH --gres=gpu:1                 # Number of GPUs
-#SBATCH --account=jxy                # User group (administrator created)
+#SBATCH --account=jxy                # User group
 #SBATCH --error=%j.err
 #SBATCH --output=%j.out
 
