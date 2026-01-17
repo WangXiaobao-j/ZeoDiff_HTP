@@ -66,7 +66,7 @@ python zeo_diff_predict.py
 
 ## Output
 
-The prediction results include:
+The descriptors used for diffusion prediction include:
 
 | Feature | Source | Description |
 |---------|--------|-------------|
