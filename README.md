@@ -1,16 +1,16 @@
-# Zeolite Diffusion Coefficient Prediction System
+# ZeoDiff – Feature Extraction and Diffusion Prediction for Zeolites
 
-An interactive desktop application for predicting molecular diffusion coefficients in zeolite structures using trained Artificial Neural Networks (ANN).
+ZeoDiff is an easy-to-use desktop application for predicting diffusion properties of zeolites. The software automatically extracts structural features from CIF crystal files and uses trained artificial neural networks (ANNs) to estimate molecular diffusion coefficients.
 
 ## Features
 
 The software provides two main functions:
 
 1. **Single Structure Prediction**  
-   Calculate diffusion coefficient for one zeolite structure. Results are displayed directly in the interface.
+   Predict the diffusion coefficient for a single zeolite structure from a CIF file. Results are displayed instantly in the application interface.
 
 2. **Batch Processing**  
-   Calculate diffusion coefficients for multiple zeolite structures. Results are saved to Excel file.
+   Predict diffusion coefficients for multiple zeolite structures in a single run. Results are automatically compiled and saved to an Excel file for further analysis.
 
 ## Requirements
 
