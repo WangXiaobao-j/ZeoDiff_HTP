@@ -1,0 +1,32 @@
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs       fudgeLJ    fudgeQQ
+     1              2              yes            1       1
+
+[ atomtypes ]
+; name   at.num      mass       charge   ptype     sigma (nm)    epsilon (kJ/mol)
+os           8    15.999405    0.000000    A      3.304E-01    0.442329411  ; Trappe-zeo
+o            8    15.999405    0.000000    A      3.304E-01    0.442329411  ; Trappe-zeo
+UF_Si    14    28.085499    0.000000    A      2.31E-01    0.18458107 ; Trappe-zeo
+CH4       6     16.04300      0.000	  A      3.73000e-01  1.230540467        ; TraPPE UA
+
+[ nonbond_params ]
+; i    j    func   sigma (nm)    epsilon (kJ/mol)
+UF_Si     UF_Si    1       0.0          0.0
+UF_Si      o           1       0.0          0.0
+UF_Si     os           1       0.0          0.0
+os           os           1       0.0          0.0
+os           o             1       0.0          0.0
+o             o            1       0.0          0.0
+CH4      CH4        1        0.0          0.0
+
+#include "EWO.itp"      ;*********************************************************
+#include "CH4.itp"
+
+[system]
+; Name 
+Zeolite+CH4
+
+[molecules]
+;Compound     nr
+EWO        1                     ;********************************************************
+METH    100

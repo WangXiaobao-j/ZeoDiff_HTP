@@ -1,0 +1,8 @@
+
+[ moleculetype ]
+; name          nrexcl
+METH       1
+
+[ atoms ]
+; Index    type    residue    resname    atom     cgnr     charge   mass 
+    1       CH4        1          METH      CH4       1           0        16.043000
