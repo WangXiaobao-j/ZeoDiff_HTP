@@ -90,7 +90,8 @@ Modify `config.py` to customize:
 
 ## Citation
 
-"Harnessing confinement effect and interpretable machine learning to predict and guide alkane diffusion in zeolite catalysts"
+"Harnessing confinement effect and interpretable machine learning to predict alkane diffusion in zeolite catalysts"
+https://doi.org/10.1038/s41467-026-71698-0
 
 ## Contact
 
